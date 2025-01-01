@@ -1,0 +1,206 @@
+/* UUNIVERSAL FORMATTING */
+.box1 {
+	max-width:800px;
+	width: 95%;
+	margin: auto;
+	outline:2px dotted green;
+	background-color:#ffffff;
+}
+
+hr {
+	border: 1px dotted grey;
+	max-width: 700px;
+	width: 85%;
+}
+
+body {
+	background-color:#f1f1ec;
+	font-family: "Garamond", Times, serif;
+	height: 100%
+}
+
+h1 {
+	color:#0b542c;
+	text-align: center;	
+}
+
+a {
+	text-decoration:none;
+}
+
+/*MENU BAR FORMATTING*/
+
+header {
+	background-image: url("placeholder.jpg");
+	height:130px;
+	width:120vw;
+	margin-left:-10vw;
+	margin-right:-10vw;
+	margin-top:-20px;
+}
+
+nav {
+	position: relative;
+	max-width: 800px;
+	width: 100vw;
+	height:100%;
+	margin: auto;
+	
+}
+
+.navtitle {
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	height: 40px;
+	width: 200px;
+}
+
+.navbar {
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+	height: 44px;
+	display:flex;
+	object-fit: none;
+}
+.navbut {
+	background-color:#f1f1ec;
+	padding:8px;
+	margin: 5px;
+	outline: 0px solid black;
+	border-radius: 2px;
+	color: #0b542c;
+}
+
+
+/* INDEX GALLERY FORMATTING!!! */
+
+	.galindex {
+		margin: 5px;
+		border: 1px dotted white;
+		float: left;
+	}
+
+	.galindex:hover {
+		border: 1px dotted green;
+	}
+
+	.galindex img {
+		width: 200px;
+		height: auto;
+	}
+
+	.desc {
+		padding: 15px;
+		text-align: center;
+		background-color: #ffffff;
+		color:#0b542c;
+		border: 2px dotted green;
+	}
+
+	.landingbox {
+		max-width: 1000px;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		margin: auto;
+		flex-wrap: wrap;
+		
+	}
+
+/*FILM LIST FORMATTING!!*/
+.film {
+	max-width: 800px;
+	width:95%;
+	height: 300px;
+	outline: 2px black;
+	margin: auto;
+	padding: 10px;
+	display: flex;
+}
+
+.poster {
+	width: 200px;
+	height: 300px;
+	float: left;
+
+}
+
+.blurb {
+	margin: 5px;
+	float: left;
+	padding-left: 15px
+}
+
+.blurb p {
+	text-indent: 25px;
+}
+
+
+/*ABOUT PAGE FORMATTING!!!!!!!*/
+#aboutbox {
+	max-width: 800px;
+	width:95%;
+	height: 300px;
+	outline: 2px black;
+	margin: auto;
+	padding: 10px;
+	display: flex;
+}
+
+#links {
+	margin: auto;
+	max-width:500px;
+	width: 60%;
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+
+#headshot {
+	max-width:300px;
+	width:37vw;
+	object-fit: cover;
+}
+
+
+/*FLEX GALLERY FORMATTING!!*/
+.gallery {
+	width: 98%;
+	max-width: 800px;
+	margin: auto;
+}
+
+.gallery ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.gallery li {
+	min-height: 150px;
+	height: 30vh;
+	list-style: none;
+	margin: 5px 2px;
+}
+
+.gallery img {
+	height: 100%;
+	object-fit: contain;
+	vertical-align: bottom;
+}
+
+.gallery iframe {
+	height: 100%;
+	vertical-align: bottom;
+	object-fit: scale-down;
+}
+
+
+/* REEL FORMATTING!!! */
+.reel {
+	width: 100vw;
+	max-width: 800px;
+	margin: auto;
+}
