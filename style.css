@@ -1,10 +1,45 @@
 /* UUNIVERSAL FORMATTING */
+
+@font-face {
+	font-family: ghostlySans;
+	src: url('Fonts/GhostlySans.ttf');
+}
+
+@font-face {
+	font-family: DotGothic;
+	src: url('Fonts/DotGothic16-Regular.ttf');
+}
+
+@font-face {
+	font-family: Corben;
+	src: url('Fonts/Corben-Regular.ttf');
+}
+
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 .box1 {
 	max-width:800px;
 	width: 95%;
 	margin: auto;
 	outline:2px dotted green;
 	background-color:#ffffff;
+	background-image: url("Images/bgnoise.png");
+}
+
+.box2 {
+	max-width:800px;
+	width: 95%;
+	margin: auto;
+	outline:2px dotted green;
+	background-color:#ffffff;
+}
+
+.box2 h1 {
+	font-family: "DotGothic";
+	font-variant: small-caps;
 }
 
 hr {
@@ -14,24 +49,40 @@ hr {
 }
 
 body {
+	background-image: url("Images/bgnoise.png");
 	background-color:#f1f1ec;
 	font-family: "Garamond", Times, serif;
-	height: 100%
+	height: 100%;
 }
 
 h1 {
 	color:#0b542c;
-	text-align: center;	
+	text-align: center;
+	font-family: "ghostlySans";	
+}
+
+h3 {
+	font-family: "DotGothic";
+	font-size: 1.25em;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+p {
+	font-size: 15px;
+	font-family: "Corben";
 }
 
 a {
 	text-decoration:none;
+	color: #0b542c;
 }
+
 
 /*MENU BAR FORMATTING*/
 
 header {
-	background-image: url("placeholder.jpg");
+	background-image: url("Images/banner_01.png");
 	height:130px;
 	width:120vw;
 	margin-left:-10vw;
@@ -54,6 +105,12 @@ nav {
 	top: 15px;
 	height: 40px;
 	width: 200px;
+	
+}
+
+.navtitle h1 {
+	color: #0c4625;
+	font-size: 2em;
 }
 
 .navbar {
@@ -64,13 +121,19 @@ nav {
 	display:flex;
 	object-fit: none;
 }
+
 .navbut {
 	background-color:#f1f1ec;
-	padding:8px;
+	padding: 4px 8px;
 	margin: 5px;
 	outline: 0px solid black;
 	border-radius: 2px;
 	color: #0b542c;
+	object-fit: scale-down;
+	font-family: "ghostlySans";
+	font-size: 1.25em;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px green;
 }
 
 
@@ -95,8 +158,10 @@ nav {
 		padding: 15px;
 		text-align: center;
 		background-color: #ffffff;
+		background-image: url("Images/bgnoise.png");
 		color:#0b542c;
 		border: 2px dotted green;
+		font-family: "Corben";
 	}
 
 	.landingbox {
@@ -113,7 +178,7 @@ nav {
 .film {
 	max-width: 800px;
 	width:95%;
-	height: 300px;
+	min-height: 300px;
 	outline: 2px black;
 	margin: auto;
 	padding: 10px;
@@ -121,7 +186,7 @@ nav {
 }
 
 .poster {
-	width: 200px;
+	
 	height: 300px;
 	float: left;
 
@@ -154,9 +219,11 @@ nav {
 	max-width:500px;
 	width: 60%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	
 	
 }
+
 
 #headshot {
 	max-width:300px;
@@ -168,7 +235,7 @@ nav {
 /*FLEX GALLERY FORMATTING!!*/
 .gallery {
 	width: 98%;
-	max-width: 800px;
+	max-width: 900px;
 	margin: auto;
 }
 
@@ -176,6 +243,7 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	padding: 0px;
 }
 
 .gallery li {
@@ -203,4 +271,15 @@ nav {
 	width: 100vw;
 	max-width: 800px;
 	margin: auto;
+}
+
+
+/* FOOTER*/
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	text-align: center;
 }
